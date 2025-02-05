@@ -54,14 +54,14 @@
 //           </div>
 //           <span>+18929773852</span>
 //           </Link>
-         
-        
-          
-      
+
+
+
+
 //           <ThemeToggle />
 //         </div>
 //       </nav>
-      
+
 //       {/* Mobile menu */}
 //       {mobileMenuOpen && (
 //         <div className="lg:hidden">
@@ -109,9 +109,13 @@ export default function Header() {
     <header className="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 text-2xl font-bold">
+          <Link
+            href="/"
+            className="-m-1.5 p-1.5 uppercase text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
+          >
             CleanJet
           </Link>
+
         </div>
         <div className="flex lg:hidden">
           <button
@@ -127,9 +131,8 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`relative text-sm font-semibold leading-6 transition-transform duration-200 hover:scale-110 hover:text-blue-600 dark:hover:text-blue-400 ${
-                pathname === item.href ? 'text-blue-600 dark:text-blue-400' : ''
-              }`}
+              className={`relative text-sm font-semibold leading-6 transition-transform duration-200 hover:scale-110 hover:text-blue-600 dark:hover:text-blue-400 ${pathname === item.href ? 'text-blue-600 dark:text-blue-400' : ''
+                }`}
             >
               {item.name}
               {pathname === item.href && (

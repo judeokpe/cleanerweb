@@ -8,6 +8,7 @@ export default function Contact() {
     name: '',
     email: '',
     message: '',
+    phone: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -27,7 +28,7 @@ export default function Contact() {
       if (!response.ok) throw new Error('Failed to send message');
 
       setStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', message: '', phone:'' });
     } catch (error) {
       setStatus('error');
     }
@@ -85,6 +86,19 @@ export default function Contact() {
                 type="email"
                 id="email"
                 value={formData.email}
+                onChange={handleChange}
+                className="mt-2 block w-full rounded-md border px-3.5 py-2 dark:bg-gray-800"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                value={formData.phone}
                 onChange={handleChange}
                 className="mt-2 block w-full rounded-md border px-3.5 py-2 dark:bg-gray-800"
                 required

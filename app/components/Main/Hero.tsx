@@ -150,10 +150,10 @@ function Hero() {
               immaculate spaces lead to joyful places!
             </p>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
-              <Link href="/contact">
+              <Link href="#quotation">
                 <Button size="lg">Get a Quote</Button>
               </Link>
-              <Link href="/services">
+              <Link href="#services">
                 <Button variant="outline" size="lg">
                   Our Services
                 </Button>

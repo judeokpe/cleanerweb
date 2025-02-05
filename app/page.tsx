@@ -4,6 +4,7 @@ import Hero from './components/Main/Hero';
 import Service from './components/Main/Service';
 import Offer from './components/Main/What-we-offer';
 import WhyChooseUs from './components/Main/why-choose-us';
+import QuotationForm from './components/Main/enquiry';
 
 
 
@@ -16,8 +17,15 @@ export default function Home() {
 
       {/* Services Preview Section */}
     <Service/>
+    <section id="services">
     <Offer/>
+    </section>
+
     <WhyChooseUs />
+    <section id="quotation">
+    <QuotationForm />
+    </section>
+   
     </div>
   );
 }
