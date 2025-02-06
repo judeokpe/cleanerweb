@@ -5,6 +5,8 @@ import Service from './components/Main/Service';
 import Offer from './components/Main/What-we-offer';
 import WhyChooseUs from './components/Main/why-choose-us';
 import QuotationForm from './components/Main/enquiry';
+import WalkThrough from './components/Main/walk-through';
+import WhatClientSay from './components/Main/what-client-say';
 
 
 
@@ -20,8 +22,10 @@ export default function Home() {
     <section id="services">
     <Offer/>
     </section>
-
+ 
     <WhyChooseUs />
+    <WalkThrough />
+    <WhatClientSay />
     <section id="quotation">
     <QuotationForm />
     </section>

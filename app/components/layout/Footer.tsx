@@ -12,16 +12,16 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold text-gray-700 dark:text-white">Follow Us</h2>
             <div className="flex justify-center md:justify-start space-x-6 mt-4">
-              <Link href={"#"} aria-label="Facebook">
+              <Link href={"#"} aria-label="Facebook" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaFacebook size={28} className="text-blue-600 dark:text-white" />
               </Link>
-              <Link href={"#"} aria-label="Twitter">
+              <Link href={"#"} aria-label="Twitter" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaXTwitter size={28} className="text-blue-400 dark:text-white" />
               </Link>
-              <Link href={"#"} aria-label="Instagram">
+              <Link href={"#"} aria-label="Instagram" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaInstagram size={28} className="text-pink-500 dark:text-white" />
               </Link>
-              <Link href={"#"} aria-label="LinkedIn">
+              <Link href={"#"} aria-label="LinkedIn" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaLinkedin size={28} className="text-blue-700 dark:text-white" />
               </Link>
             </div>
