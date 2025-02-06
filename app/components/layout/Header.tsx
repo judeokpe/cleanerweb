@@ -93,7 +93,8 @@ import ThemeToggle from '../ui/ThemeToggle';
 import { usePathname } from 'next/navigation';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { PhoneArrowDownLeftIcon } from '@heroicons/react/16/solid';
-
+import { motion } from "framer-motion";
+import Image from 'next/image';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
@@ -111,9 +112,9 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link
             href="/"
-            className="-m-1.5 p-1.5 uppercase text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
+            className="-m-1.5 p-1.5 flex items-center uppercase text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
           >
-            CleanJet
+            <Image src={'/logo.webp'} width={100} height={100} className='w-8 h-8' alt='logo' />CleanJet
           </Link>
 
         </div>
@@ -144,7 +145,12 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-2">
           <Link href="tel:+17573348357" className="flex mr-2">
             <div className="rounded-full bg-green-600 dark:bg-white p-1">
-              <PhoneArrowDownLeftIcon className="dark:text-green-600 text-white w-5 h-5" />
+              <motion.div
+                whileHover={{ rotate: [0, -10, 10, -10, 10, 0] }} // Creates a shaking effect
+                transition={{ duration: 0.4, repeat: Infinity, repeatType: "reverse" }} // Controls animation speed and repetition
+              >
+                <PhoneArrowDownLeftIcon className="dark:text-green-600 text-white w-5 h-5" />
+              </motion.div>
             </div>
             <span className='ml-2'>+18929773852</span>
           </Link>
