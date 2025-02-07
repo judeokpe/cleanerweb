@@ -92,7 +92,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
-
+import { useSettings } from "@/app/context/SettingsContext";
 const generateBubbles = (count: number) =>
   Array.from({ length: count }).map(() => ({
     width: Math.random() * 50 + 20,
@@ -107,7 +107,8 @@ function Hero() {
   useEffect(() => {
     setBubbles(generateBubbles(10));
   }, []);
-
+const settings =  useSettings()
+console.log(settings)
   return (
     <div className="relative overflow-hidden bg-white dark:bg-gray-900">
       {/* Animated Bubbles */}

@@ -70,7 +70,7 @@ const TestimoniesSettings = () => {
   };
 
   return (
-    <div className="p-6 max-w-lg mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+    <div className="p-6 mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg">
       <h2 className="text-xl font-bold mb-4 text-center">Manage Testimonies</h2>
 
       {/* Testimony List */}
