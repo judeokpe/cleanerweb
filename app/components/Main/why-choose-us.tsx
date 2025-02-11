@@ -4,14 +4,14 @@ import { CheckBadgeIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import React from 'react'
 
-function WhyChooseUs() {
+function WhyChooseUs({websiteName}:{websiteName:string}) {
     return (
         <div className='flex md:flex-row flex-col-reverse p-4 bg-gray-100 dark:bg-gray-900 space-x-2' >
 
             <div className="textdiv" >
                 <p className='uppercase text-green-600 text-2xl font-bold pb-8'>
-                    CleanJet – Your Trusted Cleaning Experts</p>
-                <p className='text-justify'>At CleanJet Cleaning Services, we pride ourselves on providing fast, efficient,<br /> and high-quality cleaning solutions tailored to meet the unique needs of both homes and businesses. <br />  We understand the importance of a spotless environment, <br /> which is why we go above and beyond to deliver exceptional results every time.</p>
+                    {websiteName} – Your Trusted Cleaning Experts</p>
+                <p className='text-justify'>At {websiteName || "SPARKLE"}  Cleaning Services, we pride ourselves on providing fast, efficient,<br /> and high-quality cleaning solutions tailored to meet the unique needs of both homes and businesses. <br />  We understand the importance of a spotless environment, <br /> which is why we go above and beyond to deliver exceptional results every time.</p>
                 <div className="mt-12">
                     <div className="icon flex md:flex-row flex-col md:space-x-2 mb-4 ">
                         <div className="">

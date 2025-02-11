@@ -15,8 +15,8 @@ export type SettingsContextType = {
 };
 
 const defaultSettings: Settings = {
-  websiteName: "CleanJet",
-  logoURL: "/logo.webp",
+  websiteName: "SPARKLE",
+  logoURL: "/sparkle.jpg",
 };
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);

@@ -18,7 +18,7 @@ export default function About() {
               <section>
                 <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
                 <p className="text-gray-600 dark:text-gray-300">
-                  To deliver exceptional cleaning services that exceed our clients' expectations, 
+                  To deliver exceptional cleaning services that exceed our clients&apos; expectations, 
                   creating healthier and more comfortable environments for homes and businesses alike.
                 </p>
               </section>

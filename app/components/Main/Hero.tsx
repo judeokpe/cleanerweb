@@ -101,14 +101,13 @@ const generateBubbles = (count: number) =>
     left: Math.random() * 100,
   }));
 
-function Hero() {
+function Hero({websiteName}:{websiteName:string}) {
   const [bubbles, setBubbles] = useState<{ width: number; height: number; top: number; left: number; }[]>([]);
 
   useEffect(() => {
     setBubbles(generateBubbles(10));
   }, []);
-const settings =  useSettings()
-console.log(settings)
+
   return (
     <div className="relative overflow-hidden bg-white dark:bg-gray-900">
       {/* Animated Bubbles */}
@@ -145,9 +144,9 @@ console.log(settings)
               Flawless Clean, Effortless Shine
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Discover the pinnacle of pristine spaces with CleanJet Cleaning
+              Discover the pinnacle of pristine spaces with {websiteName} Cleaning
               Services. Our swift and dependable team ensures your environment
-              gleams brilliantly in no time. Embrace the Jetdore touch today— where
+              gleams brilliantly in no time. Embrace the {websiteName} touch today— where
               immaculate spaces lead to joyful places!
             </p>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">

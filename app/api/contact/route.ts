@@ -1,10 +1,29 @@
+
+
 import { NextResponse } from 'next/server';
+
 import nodemailer from 'nodemailer';
+import { connectDB } from '@/app/utils/db';
+import Inquiry from '@/app/models/Contact';
 
 export async function POST(request: Request) {
   try {
     const { name, email, message, phone } = await request.json();
 
+    if (!name || !email || !message || !phone) {
+      return NextResponse.json(
+        { error: 'All fields are required' },
+        { status: 400 }
+      );
+    }
+
+    await connectDB()
+
+    // Save to database
+    const newInquiry = new Inquiry({ name, email, message, phone });
+    await newInquiry.save();
+
+    // Send email notification
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -36,17 +55,16 @@ export async function POST(request: Request) {
         </div>
       `,
     };
-    
 
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
-      { message: 'Email sent successfully' },
+      { message: 'Inquiry saved and email sent successfully✅' },
       { status: 200 }
     );
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: 'Failed to process inquiry❌' },
       { status: 500 }
     );
   }

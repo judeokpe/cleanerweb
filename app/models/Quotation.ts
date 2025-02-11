@@ -10,19 +10,25 @@ interface IQuotation extends Document {
   message: string;
   service: string;
   createdAt: Date;
+  subPackage: string,
 }
 
 // Define Mongoose Schema
-const quotationSchema = new Schema<IQuotation>({
-  name: { type: String, required: true },
-  email: { type: String, required: true },
-  phone: { type: String, required: true },
-  date: { type: String, required: true },
-  time: { type: String, required: true },
-  message: { type: String, required: true },
-  service: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
-});
+const quotationSchema = new Schema<IQuotation>(
+  {
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    phone: { type: String, required: true },
+    date: { type: String, required: true },
+    time: { type: String, required: true },
+    message: { type: String, required: true },
+    subPackage: { type: String },
+    service: { type: String},
+
+    createdAt: { type: Date, default: Date.now },
+  },
+  { timestamps: true }
+);
 
 // Define Mongoose Model
 const Quotation: Model<IQuotation> =

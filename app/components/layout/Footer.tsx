@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import NewsletterForm from '../Newsletter';
-
-export default function Footer() {
+// import {  useSettings } from './context/SettingsContext';
+export default function Footer({websiteName}:{websiteName:string}) {
+  
   return (
     <footer className="bg-white dark:bg-gray-900 py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -35,6 +36,7 @@ export default function Footer() {
               <li><Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">About Us</Link></li>
               <li><Link href="/services" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Services</Link></li>
               <li><Link href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Contact</Link></li>
+              <li><Link href="/signup" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Sign In/Sign Up to give review</Link></li>
             </ul>
           </div>
 
@@ -45,7 +47,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 text-center text-xs text-gray-500 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} CleanJet. All rights reserved.
+          &copy; {new Date().getFullYear()} {websiteName}. All rights reserved.
         </div>
       </div>
     </footer>

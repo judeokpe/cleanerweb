@@ -4,14 +4,14 @@ import Card from "../Card";
 import Button from "../ui/Button";
 import Link from "next/link";
 
-function Offer() {
+function Offer({websiteName}:{websiteName:string}) {
     return (
         <div className="bg-[#f5f5f5] dark:bg-gray-900 py-16 px-6 my-[100px]">
             {/* Header Text */}
             <div className="text-center max-w-[700px] mx-auto">
                 <p className="text-2xl font-bold uppercase text-green-600">What We Offer</p>
                 <p className="text-gray-600 mt-4">
-                    Experience the unmatched CleanJet touch—where every corner gleams with perfection,
+                    Experience the unmatched {websiteName || "SPARKLE"} touch—where every corner gleams with perfection,
                     transforming your space into a sanctuary of freshness and joy. Because a spotless
                     environment isn’t just about cleanliness—it’s about creating a brighter, happier
                     place for you to thrive!
@@ -40,6 +40,11 @@ function Offer() {
                     imgSrc="/item2.webp"
                     title="Move-In/Move-Out Cleaning"
                     description="Seamless transition with spotless cleaning before or after moving."
+                />
+                <Card
+                    imgSrc="/item1.webp"
+                    title="Eco-Friendly Cleaning"
+                    description="Sustainable and non-toxic cleaning solutions for a healthier environment."
                 />
                 <Card
                     imgSrc="/item1.webp"

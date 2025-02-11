@@ -19,12 +19,12 @@ const navigation = [
   { name: 'Contact', href: '/contact' },
 ];
 
-export default function Header() {
+export default function Header({websiteName, logoURL}:{websiteName:string, logoURL:string}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   // Get settings from context (instead of fetching with axios)
-  const { websiteName, logoURL } = useSettings();
+ 
 
   return (
     <header className="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-50">
@@ -34,8 +34,8 @@ export default function Header() {
             href="/"
             className="-m-1.5 p-1.5 flex items-center uppercase text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
           >
-            <Image src={logoURL || '/logo.webp'} width={40} height={40} className='w-8 h-8' alt='logo' />
-            {websiteName || 'Default Name'}
+            <Image src={logoURL || '/sparkle.jpg'} width={40} height={40} className='w-12 h-12' alt='logo' />
+            {websiteName || 'SPARKLE'}
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -93,6 +93,17 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+               <Link href="tel:+17573348357" className="flex mr-2">
+            <div className="rounded-full bg-green-600 dark:bg-white p-1">
+              <motion.div
+                whileHover={{ rotate: [0, -10, 10, -10, 10, 0] }} // Creates a shaking effect
+                transition={{ duration: 0.4, repeat: Infinity, repeatType: "reverse" }} // Controls animation speed and repetition
+              >
+                <PhoneArrowDownLeftIcon className="dark:text-green-600 text-white w-5 h-5" />
+              </motion.div>
+            </div>
+            <span className='ml-2'>+18929773852</span>
+          </Link>
           </div>
         </div>
       )}

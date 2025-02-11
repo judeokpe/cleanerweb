@@ -6,7 +6,7 @@ import Button from '../ui/Button'
 import { ArrowDownRightIcon } from '@heroicons/react/24/solid'
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-function Service() {
+function Service({websiteName}:{websiteName:string}) {
     return (
         <div>
             <div className="shadow-gray-400 dark:shadow-white  shadow-b shadow-sm py-24 sm:py-4 md:px-6 p-4">
@@ -18,7 +18,7 @@ function Service() {
                         </div>
                         <div className="smalltext">
                             <p className='text-md text-justify'>
-                                At CleanJet Cleaning Services, we understand that a pristine environment fosters well-being and efficiency. Our dedicated team provides top-tier cleaning services for homes, offices, and commercial properties, ensuring every space is immaculate and inviting.
+                                At {websiteName} Cleaning Services, we understand that a pristine environment fosters well-being and efficiency. Our dedicated team provides top-tier cleaning services for homes, offices, and commercial properties, ensuring every space is immaculate and inviting.
                             </p>
                         </div>
                         <div className="icon flex md:flex-row flex-col md:space-x-2 mb-4 ">
