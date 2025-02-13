@@ -165,7 +165,7 @@ import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import './globals.css';
 import LoadingAnimation from './components/Loading/LoadingAnimation';
 
-import { metadata } from './metadata'; // Import metadata here
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [showScroll, setShowScroll] = useState(false);
@@ -186,6 +186,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <head>
+      <link rel="icon" href="/logo.jpg" sizes="any" />
+      </head>
       <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <SessionProvider>
           <SettingsProvider>
