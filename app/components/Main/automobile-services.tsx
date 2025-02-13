@@ -13,7 +13,7 @@ function AutomobileServices() {
     <div className='my-36 bg-gray-100 dark:bg-gray-900 dark:shadow-md  p-6'>
       <div className="flex md:flex-row flex-col p-3 md:border ">
         <div className="max-w-[520px] mx-auto">
-          <h2 className='text-center text-green-600 uppercase text-2xl font-bold'>Our Mobile Services</h2>
+          <h2 className='text-center text-green-600 uppercase text-2xl font-bold'>Our Automobile Services</h2>
           <p className='text-center text-gray-600 dark:text-gray-300 mt-4'>From sleek exteriors to spotless interiors, we bring out the best in your vehicle with meticulous attention and premium-quality service. Because excellence is not just a promise—it’s our standard.</p>
           <div className="my-4 space-y-4 text-gray-600 dark:text-gray-400">
             <p className='flex items-center '><CheckBadgeIcon className='text-green-600 w-6 h-6' />Meticulous Attention to Detail </p>
@@ -29,13 +29,13 @@ function AutomobileServices() {
       </div>
 
       <div className="my-6">
-        <p className='text-center text-green-500 text-2xl uppercase font-bold my-4'>Our Mobile Service Packages</p>
+        <p className='text-center text-green-500 text-2xl uppercase font-bold my-4'>Our Automobile Service Packages</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           <div className="shadow-lg p-6 w-[320px] bg-gray-200 dark:bg-gray-800 rounded-xl">
             
             <div className="mt-0 text-center">
               
-            <TextCard imgUrl='/cleaning.webp' subPackage='Bronze' price='100'/>
+            <TextCard imgUrl='/cleaning.webp' subPackage='Bronze'/>
             {/* Text Section */}
               <div className="mt-2 text-gray-600 dark:text-gray-300 text-[13px]">
 
@@ -62,7 +62,7 @@ function AutomobileServices() {
            
             <div className="mt-0 text-center">
               
-            <TextCard imgUrl='/cleaning.webp' subPackage='Silver' price='150'/>
+            <TextCard imgUrl='/cleaning.webp' subPackage='Silver' />
             {/* Text Section */}
               <div className="mt-2 text-gray-600 dark:text-gray-300 text-[13px]">
 
@@ -101,7 +101,7 @@ function AutomobileServices() {
             </div> */}
             <div className="mt-0 text-center">
               
-            <TextCard imgUrl='/cleaning.webp' subPackage='Gold' price='250'/>
+            <TextCard imgUrl='/cleaning.webp' subPackage='Gold' />
             {/* Text Section */}
               <div className="mt-2 text-gray-600 dark:text-gray-300 text-[13px]">
 
@@ -140,7 +140,7 @@ function AutomobileServices() {
             </div> */}
             <div className="mt-0 text-center">
               
-            <TextCard imgUrl='/cleaning.webp' subPackage='Diamond' price='400'/>
+            <TextCard imgUrl='/cleaning.webp' subPackage='Diamond' />
             {/* Text Section */}
               <div className="mt-2 text-gray-600 dark:text-gray-300 text-[13px]">
 

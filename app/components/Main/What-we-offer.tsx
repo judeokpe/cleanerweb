@@ -4,7 +4,7 @@ import Card from "../Card";
 import Button from "../ui/Button";
 import Link from "next/link";
 
-function Offer({websiteName}:{websiteName:string}) {
+function Offer({ websiteName }: { websiteName: string }) {
     return (
         <div className="bg-[#f5f5f5] dark:bg-gray-900 py-16 px-6 my-[100px]">
             {/* Header Text */}
@@ -38,7 +38,7 @@ function Offer({websiteName}:{websiteName:string}) {
                 />
                 <Card
                     imgSrc="/item2.webp"
-                    title="Move-In/Move-Out Cleaning"
+                    title="End of Tenancy Clenaing"
                     description="Seamless transition with spotless cleaning before or after moving."
                 />
                 <Card
@@ -46,11 +46,13 @@ function Offer({websiteName}:{websiteName:string}) {
                     title="Eco-Friendly Cleaning"
                     description="Sustainable and non-toxic cleaning solutions for a healthier environment."
                 />
+                
                 <Card
-                    imgSrc="/item1.webp"
-                    title="Eco-Friendly Cleaning"
-                    description="Sustainable and non-toxic cleaning solutions for a healthier environment."
+                    imgSrc="/item2.webp"
+                    title="New Build Cleaning"
+                    description="Thorough post-construction cleaning to make your new build move-in ready."
                 />
+
             </div>
             <Link href="/service" className="mt-18 flex justify-center items-center">
                 <Button variant="gradient" className="hover:animate-bounce">View All Services</Button>

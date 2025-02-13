@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 interface TextCard {
   
-    price:string,
+    price?:string,
     subPackage: string,
     imgUrl: string
 }

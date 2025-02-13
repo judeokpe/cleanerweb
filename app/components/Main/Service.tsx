@@ -46,10 +46,13 @@ function Service({websiteName}:{websiteName:string}) {
                                 <div className="">
                                     <span className="flex items-center space-x-2"><CheckBadgeIcon className='h-4 w-4 text-green-600 dark:text-white mr-2' />Post-Construction Cleaning</span>
                                 </div>
+                                <div className="">
+                                    <span className="flex items-center space-x-2"><CheckBadgeIcon className='h-4 w-4 text-green-600 dark:text-white mr-2' />DBS certified staff</span>
+                                </div>
                             </div>
 
                         </div>
-                        <Link href="#" className="pt-4">
+                        <Link href="#quotation" className="pt-4">
                     <Button  className='w-[120px] flex items-center'>Find Us  <ArrowUpRightIcon className='w-5 h-5 font-bold ml-2'/></Button>
                    
                 </Link>

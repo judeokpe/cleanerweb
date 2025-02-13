@@ -299,8 +299,8 @@ export default function AdminSettings() {
       <aside className="w-full md:w-1/4 bg-white dark:bg-gray-800 p-4">
         <h2 className="text-lg font-semibold">Settings</h2>
         <ul className="mt-2 space-y-2">
-          <li className={`cursor-pointer hover:underline ${activeTab === 'general' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('general')}>General</li>
-          <li className={`cursor-pointer hover:underline ${activeTab === 'profile' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('profile')}>Profile</li>
+          {/* <li className={`cursor-pointer hover:underline ${activeTab === 'general' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('general')}>General</li>
+          <li className={`cursor-pointer hover:underline ${activeTab === 'profile' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('profile')}>Profile</li> */}
           <li className={`cursor-pointer hover:underline ${activeTab === 'testimonies' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('testimonies')}>Testimonies</li>
         </ul>
       </aside>
@@ -310,11 +310,11 @@ export default function AdminSettings() {
         {error && <p className="text-red-500">{error}</p>}
 
         <form onSubmit={updateSettings} className="space-y-6">
-          {activeTab === 'general' && (
+          {/* {activeTab === 'general' && (
             <>
               <ProfileSettings profileImage={profileImage} handleProfileImageChange={handleLogoChange} />
             </>
-          )}
+          )} */}
 
           {activeTab === 'testimonies' && (
             <TestimoniesSettings
