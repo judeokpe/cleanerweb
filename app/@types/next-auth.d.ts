@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-
+import mongoose from "mongoose";
 // Extend NextAuth types to include custom fields like `role`
 declare module "next-auth" {
     interface User {
@@ -20,7 +20,9 @@ declare module "next-auth" {
 }
 
 
-  interface Testimony {
+
+
+interface Testimony {
     name: string;
     message: string;
     rating: number;

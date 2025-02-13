@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-   
     "start": "next start",
     "build": "next build --no-lint",
-
     "lint": "next lint"
   },
   "dependencies": {

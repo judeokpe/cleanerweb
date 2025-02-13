@@ -94,6 +94,7 @@ const WhatClientsSay = () => {
       try {
         const { data } = await axios.get("/api/testimonies"); // Fetch testimonies from backend
         setTestimonies(data);
+        console.log(data)
       } catch (error) {
         console.error("Error fetching testimonies:", error);
       }

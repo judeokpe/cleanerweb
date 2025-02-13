@@ -63,18 +63,18 @@ export default function SignUp() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+        <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 px-4">
             <ToastContainer /> {/* Toast Container for notifications */}
 
-            <div className="w-full max-w-md p-6 bg-white shadow-lg rounded-lg">
+            <div className="w-full max-w-md p-6 text-black bg-white dark:bg-gray-100 shadow-lg rounded-lg">
                 {/* Logo */}
                 <div className="flex items-center justify-center gap-2">
-                    <Image src="/logo.webp" alt="logo" width={40} height={40} className="w-10 h-10 object-cover" />
+                    <Image src="/logo.jpg" alt="logo" width={40} height={40} className="w-10 h-10 object-cover" />
                     <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent uppercase">SPARKLE</p>
                 </div>
 
                 {/* Form Title */}
-                <h2 className="text-2xl font-semibold text-center mt-4">Create an Account</h2>
+                <h2 className="text-2xl dark:text-black font-semibold text-center mt-4">Create an Account</h2>
 
                 {error && <p className="text-red-500 text-sm text-center mt-2">{error}</p>}
 

@@ -153,25 +153,25 @@ export default function Contact() {
             <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold">Our Address</h2>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                123 CleanJet Street, New York, NY 10001
+                123 Sparkle Street, New York, NY 10001
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
                 <strong>Phone:</strong> +1 (555) 123-4567
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                <strong>Email:</strong> contact@cleanjet.com
+                <strong>Email:</strong> support@Sparkle.co.uk
               </p>
             </div>
 
             {/* Google Map */}
-            <div className="rounded-lg overflow-hidden shadow-md">
+            {/* <div className="rounded-lg overflow-hidden shadow-md">
               <iframe
-                title="CleanJet Location"
+                title="Sparkle Location"
                 className="w-full h-64 md:h-72"
                 src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=New+York,NY"
                 allowFullScreen
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

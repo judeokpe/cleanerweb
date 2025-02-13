@@ -40,7 +40,7 @@
 //     const mailOptions = {
 //       from: process.env.EMAIL_USER,
 //       to: process.env.ADMIN_EMAIL,
-//       subject: `Quotation Request from ${name} - CleanJet`,
+//       subject: `Quotation Request from ${name} - Sparkle`,
 //       text: emailContent.text,
 //       html: emailContent.html,
 //     }

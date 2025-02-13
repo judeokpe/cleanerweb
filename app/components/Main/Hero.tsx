@@ -49,7 +49,7 @@
 //               Flawless Clean, Effortless Shine
 //             </h1>
 //             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-//               Discover the pinnacle of pristine spaces with CleanJet Cleaning
+//               Discover the pinnacle of pristine spaces with Sparkle Cleaning
 //               Services. Our swift and dependable team ensures your environment
 //               gleams brilliantly in no time. Embrace the Jetdore touch today—
 //               where immaculate spaces lead to joyful places!

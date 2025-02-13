@@ -5,7 +5,7 @@ const LoadingAnimation: React.FC = () => {
   return (
     <div className="loading-container">
       <div className="loading-spinner">
-        <span className="loading-text">CleanJet</span>
+        <span className="loading-text">SparkleSky</span>
       </div>
     </div>
   );

@@ -50,11 +50,11 @@ export default function Login() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
-            <div className="w-full max-w-md p-6 bg-white shadow-lg rounded-lg">
+        <div className="flex items-center justify-center dark:bg-gray-900 min-h-screen bg-gray-100 px-4">
+            <div className="w-full  dark:text-black dark:bg-gray-100 max-w-md p-6 bg-white shadow-lg rounded-lg">
                 {/* Logo */}
                 <div className="flex items-center justify-center gap-2">
-                    <Image src="/logo.webp" alt="logo" width={40} height={40} className="w-10 h-10 object-cover" />
+                    <Image src="/logo.jpg" alt="logo" width={40} height={40} className="w-10 h-10 object-cover" />
                     <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent uppercase">
                         SPARKLE
                     </p>

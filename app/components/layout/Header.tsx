@@ -34,7 +34,7 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
             href="/"
             className="-m-1.5 p-1.5 flex items-center uppercase text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
           >
-            <Image src={logoURL || '/sparkle.jpg'} width={40} height={40} className='w-12 h-12' alt='logo' />
+            <Image src={logoURL || '/logo.jpg'} width={40} height={40} className='w-12 h-12' alt='logo' />
             {websiteName || 'SPARKLE'}
           </Link>
         </div>
