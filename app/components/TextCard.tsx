@@ -26,7 +26,7 @@ function TextCard({ price, subPackage, imgUrl}:TextCard) {
             </div>
       <div className="mt-2 text-center">
               <h3 className="text-xl font-semibold text-green-600 uppercase">{subPackage}</h3>
-              <h4>${price}</h4>
+              <h4>{price}</h4>
               <div className="mt-2 text-gray-600 dark:text-gray-300 text-[13px]">
 
                 <div className="my-4 space-y-2 text-gray-600 dark:text-gray-400">
