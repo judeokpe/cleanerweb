@@ -16,7 +16,7 @@ export type SettingsContextType = {
 
 const defaultSettings: Settings = {
   websiteName: "SPARKLE",
-  logoURL: "/sparkle.jpg",
+  logoURL: "/logo.jpg",
 };
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
