@@ -177,8 +177,6 @@
 // }
 
 
-
-
 "use client";
 
 import axios from 'axios';
@@ -186,7 +184,7 @@ import { Testimony } from '@/app/@types/next-auth';
 import ProfileSettings from '@/app/components/Admin/ProfileSettings';
 import TestimoniesSettings from '@/app/components/Admin/TestimoniesSettings';
 import React, { useState, useEffect } from 'react';
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
 
@@ -299,10 +297,16 @@ export default function AdminSettings() {
       <aside className="w-full md:w-1/4 bg-white dark:bg-gray-800 p-4">
         <h2 className="text-lg font-semibold">Settings</h2>
         <ul className="mt-2 space-y-2">
-          {/* <li className={`cursor-pointer hover:underline ${activeTab === 'general' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('general')}>General</li>
-          <li className={`cursor-pointer hover:underline ${activeTab === 'profile' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('profile')}>Profile</li> */}
           <li className={`cursor-pointer hover:underline ${activeTab === 'testimonies' ? 'text-green-500 font-bold' : ''}`} onClick={() => setActiveTab('testimonies')}>Testimonies</li>
         </ul>
+
+        {/* Logout Button */}
+        <button 
+          onClick={() => signOut({ callbackUrl: '/' })}
+          className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+        >
+          Logout
+        </button>
       </aside>
 
       <main className="flex-1 p-6">
@@ -310,12 +314,6 @@ export default function AdminSettings() {
         {error && <p className="text-red-500">{error}</p>}
 
         <form onSubmit={updateSettings} className="space-y-6">
-          {/* {activeTab === 'general' && (
-            <>
-              <ProfileSettings profileImage={profileImage} handleProfileImageChange={handleLogoChange} />
-            </>
-          )} */}
-
           {activeTab === 'testimonies' && (
             <TestimoniesSettings
               testimonies={testimonies}

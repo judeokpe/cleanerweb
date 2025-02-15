@@ -64,7 +64,7 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-2">
-          <Link href="tel:+17573348357" className="flex mr-2">
+          <Link href="tel:+447717603838" className="flex mr-2">
             <div className="rounded-full bg-green-600 dark:bg-white p-1">
               <motion.div
                 whileHover={{ rotate: [0, -10, 10, -10, 10, 0] }} // Creates a shaking effect
@@ -73,7 +73,7 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
                 <PhoneArrowDownLeftIcon className="dark:text-green-600 text-white w-5 h-5" />
               </motion.div>
             </div>
-            <span className='ml-2'>+18929773852</span>
+            <span className='ml-2'>+447717603838</span>
           </Link>
           <ThemeToggle />
         </div>
@@ -93,7 +93,7 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
                 {item.name}
               </Link>
             ))}
-               <Link href="tel:+17573348357" className="flex mr-2">
+               <Link href="tel:+447717603838" className="flex mr-2">
             <div className="rounded-full bg-green-600 dark:bg-white p-1">
               <motion.div
                 whileHover={{ rotate: [0, -10, 10, -10, 10, 0] }} // Creates a shaking effect
@@ -102,7 +102,7 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
                 <PhoneArrowDownLeftIcon className="dark:text-green-600 text-white w-5 h-5" />
               </motion.div>
             </div>
-            <span className='ml-2'>+18929773852</span>
+            <span className='ml-2'>+447717603838</span>
           </Link>
           </div>
         </div>

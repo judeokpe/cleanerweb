@@ -31,7 +31,7 @@ function WalkThrough() {
             alt="cleaning item"
             width={600}
             height={600}
-            className='object-fit h-[400px] w-[1200px] rounded-tl-full'
+            className='object-fit h-[400px] w-[1200px] rounded-tl-4'
           />
         </motion.div>
       </div>

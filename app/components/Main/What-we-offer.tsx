@@ -22,12 +22,12 @@ function Offer({ websiteName }: { websiteName: string }) {
             <div className="mt-12 mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center place-items-center">
 
                 <Card
-                    imgSrc="/cleaning2.webp"
+                    imgSrc="/residential.webp"
                     title="Residential Cleaning"
                     description="Keep your home spotless with our professional cleaning services."
                 />
                 <Card
-                    imgSrc="/cleaning.webp"
+                    imgSrc="/commercial.webp"
                     title="Commercial Cleaning"
                     description="Ensure a pristine workspace with our expert office cleaning solutions."
                 />
@@ -37,18 +37,18 @@ function Offer({ websiteName }: { websiteName: string }) {
                     description="Thorough and detailed cleaning for a truly refreshed space."
                 />
                 <Card
-                    imgSrc="/item2.webp"
+                    imgSrc="/end-tenancy.webp"
                     title="End of Tenancy Clenaing"
                     description="Seamless transition with spotless cleaning before or after moving."
                 />
                 <Card
-                    imgSrc="/item1.webp"
+                    imgSrc="/eco.webp"
                     title="Eco-Friendly Cleaning"
                     description="Sustainable and non-toxic cleaning solutions for a healthier environment."
                 />
                 
                 <Card
-                    imgSrc="/item2.webp"
+                    imgSrc="/new.webp"
                     title="New Build Cleaning"
                     description="Thorough post-construction cleaning to make your new build move-in ready."
                 />

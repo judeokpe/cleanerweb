@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 
@@ -11,11 +11,16 @@ export default function Login() {
     const [form, setForm] = useState({ email: "", password: "" });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
+    const { data: session, status } = useSession();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
-
+    useEffect(() => {
+        if (status === "authenticated") {
+            router.push("/admin");
+        }
+    }, [status, router]);
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setError("");

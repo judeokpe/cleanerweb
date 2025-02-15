@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "./ui/Button";
 import { SparklesIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 interface CardProps {
   imgSrc?: string;
@@ -38,7 +39,10 @@ function Card({ imgSrc, title, description }: CardProps) {
 
       {/* Button Section */}
       <div className="mt-5 flex justify-center">
+        <Link href="#quotation">
         <Button variant="gradient" className="flex">Request Service <SparklesIcon className="w-4 h-4 ml-2" /></Button>
+
+        </Link>
       </div>
     </div>
   );

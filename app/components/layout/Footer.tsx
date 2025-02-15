@@ -13,10 +13,10 @@ export default function Footer({websiteName}:{websiteName:string}) {
           <div>
             <h2 className="text-lg font-semibold text-gray-700 dark:text-white">Follow Us</h2>
             <div className="flex justify-center md:justify-start space-x-6 mt-4">
-              <Link href={"#"} aria-label="Facebook" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
+              <Link href={"https://www.facebook.com/share/15DoioLHJk/"} aria-label="Facebook" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaFacebook size={28} className="text-blue-600 dark:text-white" />
               </Link>
-              <Link href={"#"} aria-label="Twitter" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
+              <Link href={"https://x.com/NnaemekaAmedu?t=6Xm06uJ9-ju3NCkM26lYmw&s=08"} aria-label="Twitter" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
                 <FaXTwitter size={28} className="text-blue-400 dark:text-white" />
               </Link>
               <Link href={"#"} aria-label="Instagram" className='hover:bg-gray-100 dark:hover:bg-gray-700 p-2 hover:p-2 rounded-full'>
@@ -36,7 +36,7 @@ export default function Footer({websiteName}:{websiteName:string}) {
               <li><Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">About Us</Link></li>
               <li><Link href="/services" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Services</Link></li>
               <li><Link href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Contact</Link></li>
-              <li><Link href="/signup" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Sign In/Sign Up to give review</Link></li>
+              <li><Link href="/login" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">Sign In to give review</Link></li>
             </ul>
           </div>
 

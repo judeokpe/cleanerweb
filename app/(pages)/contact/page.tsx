@@ -156,10 +156,10 @@ export default function Contact() {
                 123 Sparkle Street, New York, NY 10001
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                <strong>Phone:</strong> +1 (555) 123-4567
+                <strong>Phone:+447717603838</strong> 
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                <strong>Email:</strong> support@Sparkle.co.uk
+                <strong>Email:</strong> support@sparkle.co.uk
               </p>
             </div>
 
