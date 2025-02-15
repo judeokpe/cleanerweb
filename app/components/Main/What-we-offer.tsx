@@ -54,7 +54,7 @@ function Offer({ websiteName }: { websiteName: string }) {
                 />
 
             </div>
-            <Link href="/service" className="mt-18 flex justify-center items-center">
+            <Link href="/services" className="mt-18 flex justify-center items-center">
                 <Button variant="gradient" className="hover:animate-bounce">View All Services</Button>
             </Link>
 
