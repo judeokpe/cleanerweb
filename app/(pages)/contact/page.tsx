@@ -47,7 +47,7 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="border p-4">
+          <div className="border border-green-500 bg-gray-399 p-4">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-center">
               Contact Us
             </h1>
@@ -153,7 +153,7 @@ export default function Contact() {
             <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold">Our Address</h2>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                123 Sparkle Street, New York, NY 10001
+              115 Katrine Crescent Kirkcaldy FIFE United Kingdom
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
                 <strong>Phone:+447717603838</strong> 

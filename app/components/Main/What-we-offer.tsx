@@ -10,7 +10,7 @@ function Offer({ websiteName }: { websiteName: string }) {
             {/* Header Text */}
             <div className="text-center max-w-[700px] mx-auto">
                 <p className="text-2xl font-bold uppercase text-green-600">What We Offer</p>
-                <p className="text-gray-600 mt-4">
+                <p className="text-gray-600 dark:text-gray-200 mt-4">
                     Experience the unmatched {websiteName || "SPARKLE"} touch—where every corner gleams with perfection,
                     transforming your space into a sanctuary of freshness and joy. Because a spotless
                     environment isn’t just about cleanliness—it’s about creating a brighter, happier

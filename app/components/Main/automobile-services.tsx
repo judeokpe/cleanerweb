@@ -11,7 +11,7 @@ import Link from 'next/link'
 function AutomobileServices() {
   return (
     <div className='my-36 bg-gray-100 dark:bg-gray-900 dark:shadow-md  p-6'>
-      <div className="flex md:flex-row flex-col p-3 md:border space-x-6">
+      <div className="flex lg:flex-row flex-col-reverse p-3 md:border space-x-6">
         <div className="max-w-[520px] mx-auto">
           <h2 className='text-center text-green-600 uppercase text-2xl font-bold'>Our Mobile Car wash Services</h2>
           <p className='text-justify text-gray-600 dark:text-gray-300 mt-4'>
@@ -26,7 +26,7 @@ Experience top-tier convenience with our mobile car wash services, bringing prof
           </div>
         </div>
         <div className="">
-          <Image src={"/car1.webp"} alt='cars' width={600} height={500} />
+          <Image src={"/car1.webp"} alt='cars' width={600} height={500}  className='w-[600px] h-auto object-cover'/>
         </div>
       </div>
 

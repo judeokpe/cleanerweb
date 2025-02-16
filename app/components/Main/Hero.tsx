@@ -77,7 +77,7 @@ function Hero({websiteName}:{websiteName:string}) {
           </div>
 
           {/* Right Image Section */}
-          <div className="relative w-full max-w-lg hidden md:block">
+          <div className="relative w-full max-w-lg hidden lg:block">
             <Image
               src="/jantor.webp"
               alt="Cleaning Service"

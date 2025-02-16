@@ -80,8 +80,11 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
       </nav>
 
       {/* Mobile menu */}
+      
       {mobileMenuOpen && (
-        <div className="lg:hidden">
+        <> 
+        
+        <div className="lg:hidden flex">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {navigation.map((item) => (
               <Link
@@ -105,7 +108,9 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
             <span className='ml-2'>+447717603838</span>
           </Link>
           </div>
+          
         </div>
+        </>
       )}
     </header>
   );
