@@ -84,8 +84,8 @@ export default function Header({websiteName, logoURL}:{websiteName:string, logoU
       {mobileMenuOpen && (
         <> 
         
-        <div className="lg:hidden flex">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+        <div className="lg:hidden flex h-[600px] w-[300px] ">
+          <div className="space-y-1 px-2 pb-3 pt-2 h-full">
             {navigation.map((item) => (
               <Link
                 key={item.name}
