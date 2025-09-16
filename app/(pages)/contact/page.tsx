@@ -159,7 +159,7 @@ export default function Contact() {
                 <strong>Phone:+447717603838</strong> 
               </p>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                <strong>Email:</strong> support@sparkle.co.uk
+                <strong>Email:</strong> support@sparklesky.co.uk
               </p>
             </div>
 
